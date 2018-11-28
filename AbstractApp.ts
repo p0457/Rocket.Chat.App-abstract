@@ -30,7 +30,7 @@ export class AbstractApp extends App {
     await configuration.settings.provideSetting({
       id: 'abstract_icon',
       type: SettingType.STRING,
-      packageValue: 'https://raw.githubusercontent.com/tgardner851/Rocket.Chat.App-abstract/master/icon.jpg', // TODO: Provide icon png URL
+      packageValue: 'https://raw.githubusercontent.com/tgardner851/Rocket.Chat.App-abstract/master/icon.png',
       required: true,
       public: false,
       i18nLabel: 'Customize_Icon',
