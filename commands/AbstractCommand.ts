@@ -28,11 +28,8 @@ export class AbstractCommand implements ISlashCommand {
             .setSender(context.getSender()).setRoom(context.getRoom())
             .setText(result.content).setUsernameAlias(username).setAvatarUrl(icon);
 
-        if (result.successful) {
-            await modify.getCreator().finish(builder);
-        } else {
-            await modify.getNotifier().notifyUser(context.getSender(), builder.getMessage());
-        }
+        // Respond back to user directly
+        await modify.getNotifier().notifyUser(context.getSender(), builder.getMessage());
 
         return;
     }
