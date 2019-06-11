@@ -1,7 +1,7 @@
 # Abstract
 Finds an Abstract on the topic queried.
 
-You can change the Name that the applications posts as, as well as the icon.
+You can change the Name that the application posts as, as well as the icon.
 
 ## Biolerplate for Rocket.Chat Apps:
 
